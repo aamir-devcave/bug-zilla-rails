@@ -1,0 +1,37 @@
+<% provide(:title, "Login") %>
+
+ <form  method="post">
+  <div class="imgcontainer">
+    <%
+=begin%>
+ <img src=" " alt="Aamir-Bug-Zilla" class="avatar"> 
+<%
+=end%>
+  <%= image_tag "profilee.jpg",width: "200" %>
+  
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname">
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw">
+<ul>
+    <li> <%= link_to 'Login As Admin', admin_new_path %> </li>
+    <li><%= link_to 'Login As Manager', manager_new_path  %>  </li>
+    
+    
+    <li> <%= link_to "Login As Engineer",engineer_new_path %> </li>
+
+</ul>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form> 

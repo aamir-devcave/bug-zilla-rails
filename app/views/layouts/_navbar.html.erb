@@ -1,8 +1,16 @@
 <nav>
         <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",'#' %></li>
+
+ <%
+=begin%>
+ <li>    <a href="www.wordpress.com"> Sample Click </a>        <li>  
+<%
+=end%>
+
+        <li><%= link_to "Home",root_path %></li>
         
-        <li><%= link_to "Help",'#' %></li>
+        
+        <li><%= link_to "Help",helf_path %></li>
         <li><%= link_to "Log in", '#' %></li>
         </ul>
 </nav>
